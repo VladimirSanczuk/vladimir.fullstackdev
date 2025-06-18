@@ -1,0 +1,28 @@
+{
+    "name": "vladimir",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "start:tailwind": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/tailwind-runtime.css --watch"
+    },
+    "keywords": [],
+    "author": "vladimir",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.7",
+        "bootstrap-icons": "^1.13.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "ejs": "^3.1.10",
+        "express": "^5.1.0",
+        "path": "^0.12.7",
+        "tailwindcss": "^4.1.7"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}

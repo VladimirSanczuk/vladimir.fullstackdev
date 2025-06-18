@@ -1,0 +1,21 @@
+# Modulos Node
+node_modules/
+
+# Variables de entorno
+.env
+env/
+
+# VSCode
+.vscode/
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de swap o backups
+*.swp
+*.bak

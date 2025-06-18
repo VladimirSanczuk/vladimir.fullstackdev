@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Vladimir Sanczuk | Desarrollador Full Stack Web y Software</title>
+
+
+    <!-- Descripción para motores de búsqueda -->
+    <meta name="description" content="Soy Vladimir Sanczuk, desarrollador full stack especializado en soluciones web y de software. También desarrollador de Ingeniería Electrónica y Hardware." />
+
+
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Vladimir Sanczuk, desarrollador full stack, portafolio, software, web, programación, JavaScript, Python, C++, IoT, Ingeniería Electrónica" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="/recursos/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/recursos/img/apple-touch-icon.png" />
+    
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vladimir Sanczuk | Desarrollador Full Stack" />
+    <meta property="og:description" content="Portafolio de Vladimir Sanczuk, desarrollador full stack de software y electrónica." />
+    <meta property="og:image" content="https://tu-dominio.com/recursos/img/preview.jpg" />
+    <meta property="og:url" content="https://tu-dominio.com/" />
+    <meta property="og:type" content="website" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vladimir Sanczuk | Desarrollador Full Stack" />
+    <meta name="twitter:description" content="ortafolio de Vladimir Sanczuk, desarrollador full stack de software y electrónica." />
+    <meta name="twitter:image" content="https://tu-dominio.com/recursos/img/preview.jpg" />
+    <meta name="twitter:creator" content="@TuUsuarioTwitter" />
+
+
+    <!-- Enlaces CSS -->
+    <link rel="stylesheet" href="/recursos/css/tailwind-runtime.css">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <!-- Canonical para evitar contenido duplicado -->
+    <link rel="canonical" href="https://tu-dominio.com/" />
+</head>
+<body class="font-inter text-primary bg-fondoPrimario flex h-screen overflow-hidden scroll-smooth">
+
+    <%- include('partials/header') %>
+
+    <!-- Backdrop -->
+    <div id="backdrop" class="hidden fixed  inset-0 bg-black/50 z-10 lg:hidden"></div>
+
+    <button
+        id="menu_boton"
+        class="absolute top-4 right-8 flex items-center justify-center w-10 h-10 bg-blue-400 text-white text-3xl rounded-full shadow-lg hover:bg-blue-500 hover:cursor-pointer hover: transition-colors duration-300 ease-in-out z-40 lg:hidden"
+    >
+        <svg width="20" height="20">
+            <use xlink:href="/recursos/assets/svg/sprite.svg#burger" />
+        </svg>
+    </button>
+
+
+    <main class="flex-1 overflow-y-auto">
+
+        <!-- Seccion banner -->
+        <section class="flex flex-col relative min-h-[100dvh] w-full bg-[url('/recursos/images/home/banner16-9.webp')] bg-cover bg-center justify-center items-center" id="home">
+
+            <!-- Overlay negro -->
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="flex flex-col gap-4 z-10 text-white justify-center h-full px-2 py-8 w-full max-w-[1200px] md:px-4 md:py-16">
+                <h2 class="text-4xl font-bold">Vladimir Sanczuk</h2>
+                <h3 class="text-2xl font-semibold">
+                    <span id="typed-text" class="inline-block border-b-3 border-blue-500  pb-1"></span>
+                </h3>
+            </div>
+        </section>
+
+
+        <!-- Seccion about -->
+        <section class="flex flex-col items-center min-h-[100dvh]" id="sobre_mi">
+            <div class="flex flex-col gap-14 px-4 py-14 w-full max-w-[1200px] sm:px-6 md:py-16 lg:px-8">
+
+                <section>
+                    <h2 class="text-2xl font-semibold md:text-2xl">Sobre mi</h2>
+                    <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+                    <p class="mt-4">Soy una persona multirol, desarrollador de Software Full Stack y de Hardware. Actualmente resido en Córdoba, Argentina. Soy un apasionado por las nuevas tecnologías, la electrónica y la programación.</p>
+                </section>
+
+
+                <!-- Cards educacion y experiencia -->
+                <section class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                    <!-- Card educacion -->
+                    <article class="flex flex-col w-full gap-3 p-6 bg-white border border-primary/10 rounded-lg shadow-sm transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex gap-3 items-center">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#educacion" />
+                                </svg>
+                            </div>
+                            <h3 class="text-secondary font-semibold">Educación</h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-secondary font-medium">Ingeniería Electrónica</h4>
+                            <p class="text-sm">Universidad Tecnológica Nacional (FRVM)</p>
+                            <p class="text-sm">2014 - Presente</p>
+                            <p class="text-sm">Incompleto</p>
+                        </div>
+                        
+                    </article>
+
+                    <!-- Card experiencia -->
+                    <article class="flex flex-col w-full gap-3 p-6 bg-white border border-primary/10 rounded-lg shadow-sm transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex gap-3 items-center">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#experiencia" />
+                                </svg>
+                            </div>
+                            <h3 class="text-secondary font-semibold">Experiencia</h3>
+                        </div>
+
+                        <div class="flex flex-col gap-3">
+                            <div class="flex flex-col">
+                                <h4 class="text-secondary font-medium">Hardware y Software Developer</h4>
+                                <p class="text-sm">WitPoint SA</p>
+                                <p class="text-sm">Junio 2022 - Enero 2024</p>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <h4 class="text-secondary font-medium">Desarrollador de electrónica</h4>
+                                <p class="text-sm">Metalfor</p>
+                                <p class="text-sm">Enero 2024 - Enero 2025</p>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <h4 class="text-secondary font-medium">Full Stack Developer</h4>
+                                <p class="text-sm">Freelance</p>
+                                <p class="text-sm">2025 - Presente</p>
+                            </div>
+
+                        </div>
+                        
+                    </article>
+
+                </section>
+
+
+                <section class="flex flex-col gap-4 items-center">
+
+                    <!-- Foto de perfil -->
+                    <div>
+                        <img
+                            src="/recursos/images/home/fotoVladimir.jpg"
+                            alt="Foto Vladimir Sanczuk"
+                            class="w-40 h-auto rounded-full border-3 border-blue-500 transition-transform duration-500 hover:scale-105"
+                        >
+                    </div>
+
+                    <!-- Nombre y profesion -->
+                    <div class="flex flex-col items-center">
+                        <h3 class="text-2xl font-semibold">Vladimir Sanczuk</h3>
+                        <h4 class="font-semibold">Ingeniería Electrónica & Programación</h4>
+                    </div>
+
+                    <!-- Principales datos -->
+                    <article>
+                        <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Full Stack</span>
+                        <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">React</span>
+                        <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Electrónica</span>
+                        <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Programación</span>
+                    </article>
+
+                    <!-- Boton descargar curriculum -->
+                    <a href="/recursos/documents/VLADIMIR_SANCZUK_CV.pdf" download="VLADIMIR_SANCZUK_CV.pdf" class="flex flex-row items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm transition-transform duration-300 hover:bg-blue-600 hover:cursor-pointer hover:scale-105">
+                        <svg aria-hidden="true" width="16" height="16">
+                            <use href="/recursos/assets/svg/sprite.svg#download"></use>
+                        </svg>
+
+                        <span>Descargar Curriculum</span>
+                    </a>
+
+                </section>
+                
+            </div>
+        </section>
+
+        
+        <!-- Section proyectos -->
+        <section class="flex flex-col items-center min-h-[100dvh] bg-gray-200" id="proyectos">
+            <div class="flex flex-col gap-14 px-4 py-14 w-full max-w-[1200px] sm:px-6 md:py-16 lg:px-8">
+                <section>
+                    <h2 class="text-2xl font-semibold md:text-2xl">Proyectos</h2>
+                    <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+                    <p class="mt-4">A continuación puede ver algunos de los proyectos en los que he trabajado, donde puede apreciar mis habilidades en varias tecnologías y los problemas que he resuelto.</p>
+                </section>
+
+                <!-- Grid proyectos -->
+                <section class="grid gap-6 justify-center justify-items-center
+                    grid-cols-[repeat(auto-fit,_minmax(0,_300px))]">
+
+                    <!-- Card de proyecto -->
+                    <article class="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl w-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <img src="/recursos/images/home/imagenesProyectos/empresasdeviajes.webp" alt="Imagen de proyecto empresas de viajes" class="w-full object-cover rounded-t-xl">
+
+                        <div class="flex flex-col flex-1 p-4">
+
+                            <!-- Titulo y descripcion -->
+                            <header class="flex flex-col gap-2 mb-4">
+                                <h3 class="text-xl font-semibold">Empresas de viajes</h3>
+                                <p class="text-sm">Desarrollo Full Stack de página institucional con catálogo de viajes y página de administración. Hecho para "Empresas de Viajes" una sub página de Buteler Viajes.</p>
+                            </header>
+                            
+                            <!-- Tecnologias utilizadas -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <!-- <span class="px-2 py-1 bg-gray-100 rounded text-xs">Node.js</span> -->
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="mt-auto flex justify-end">
+                                <!--
+                                <a href="" class="rounded-full font-semibold px-4 py-1 border border-gray-400 hover:bg-blue-600 hover:text-white">Ver más</a>-->
+
+                                <a href="https://www.empresasdeviajes.com.ar" rel="noopener noreferrer" target="_blank" class="bg-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full hover:bg-blue-600">Ver proyecto</a>
+                            </div>
+                            
+                        </div>
+                    </article>
+
+                    <!-- Card de proyecto -->
+                    <article class="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl w-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <img src="/recursos/images/home/imagenesProyectos/prevert.webp" alt="Imagen de proyecto web Prevert" class="w-full object-cover rounded-t-xl">
+
+                        <div class="flex flex-col flex-1 p-4">
+
+                            <!-- Titulo y descripcion -->
+                            <header class="flex flex-col gap-2 mb-4">
+                                <h3 class="text-xl font-semibold">Prevert Quesos</h3>
+                                <p class="text-sm">Desarrollo completo de página web estatica para Prevert Quesos. Se utilizó Node.js para hacer Server Side Rendering (SSR) utilizando plantillas EJS para mejorar SEO.</p>
+                            </header>
+                            
+                            <!-- Tecnologias utilizadas -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <!-- <span class="px-2 py-1 bg-gray-100 rounded text-xs">Node.js</span> -->
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="mt-auto flex justify-end">
+                                <!--
+                                <a href="" class="rounded-full font-semibold px-4 py-1 border border-gray-400 hover:bg-blue-600 hover:text-white">Ver más</a>-->
+
+                                <a href="https://www.prevert.com.ar" rel="noopener noreferrer" target="_blank" class="bg-blue-500 text-white text-sm font-semibold px-4 py-1 rounded-full hover:bg-blue-600">Ver proyecto</a>
+                            </div>
+                            
+                        </div>
+                    </article>
+
+                </section>
+                
+            </div>
+        </section>
+
+
+        <!-- Sección Skills -->
+        <section class="flex flex-col items-center min-h-[100dvh]" id="habilidades">
+            <div class="flex flex-col gap-14 px-4 py-14 w-full max-w-[1200px] sm:px-6 md:py-16 lg:px-8">
+
+                <!-- Título -->
+                <section>
+                    <h2 class="text-2xl font-semibold md:text-2xl">Habilidades</h2>
+                    <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+                    <p class="mt-4">Estas son algunas de las habilidades que he adquirido a lo largo de mi carrera profesional.</p>
+                </section>
+
+                <!-- Grid de Skills -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch auto-rows-fr">
+
+                    <!-- Lenguajes -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#lenguajes" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Lenguajes</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">HTML/CSS</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">JavaScript</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Python</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">C/C++</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#frontend" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Frontend</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">React</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Tailwind</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#backend" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Backend</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Node.js</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Express</span>
+                        </div>
+                    </div>
+
+                    <!-- Bases de Datos -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#bbdd" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Bases de Datos</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">MySQL</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Tecnologías -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#tecnologias" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Tecnologías</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Git / GitHub</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Electrónica -->
+                    <div class="flex flex-col gap-4 bg-white rounded-lg border border-primary/10 shadow-sm p-5 h-full transition-transform duration-500 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex flex-row gap-2">
+                            <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                <svg width="16" height="16">
+                                    <use xlink:href="/recursos/assets/svg/sprite.svg#electronica" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold">Electrónica</h3>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 ">
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">PCB Design</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">KiCAD</span>
+                            <span class="px-3 py-1 rounded-full text-xs text-tertiary bg-fourth">Altium</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <!-- Section contacto -->
+        <section class="flex flex-col items-center min-h-[100dvh] bg-gray-200" id="contacto">
+            <div class="flex flex-col gap-14 px-4 py-14 w-full max-w-[1200px] sm:px-6 md:py-16 lg:px-8">
+                <!-- Titulo y subtitulo -->
+                <section>
+                    <h2 class="text-2xl font-semibold md:text-2xl">Contacto</h2>
+                    <div class="w-12 h-1 bg-blue-500 mt-1"></div>
+                    <p class="mt-4">¿Necesitas desarrollar un proyecto? No dudes en contactarme</p>
+                </section>
+
+                
+                <div class="grid grid-cols-1 gap-6 p-2 sm:p-6 lg:grid-cols-2">
+
+                    <!-- Datos -->
+                    <div class="flex flex-col bg-white rounded-lg p-4 gap-6 w-full overflow-x-auto">
+
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-2xl font-semibold">Información de contacto.</h3>
+                            <p>Puede contactarme a través del formulario o por algúno de los siguientes medios.</p>
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <!-- Teléfono -->
+                            <div class="flex flex-row gap-2">
+                                <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="/recursos/assets/svg/sprite.svg#whatsapp" />
+                                    </svg>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <b class="text-sm">Whatsapp</b>
+                                    <span class="text-sm">+54 353 5085437</span>
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div class="flex flex-row gap-2">
+                                <div class="flex min-w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="/recursos/assets/svg/sprite.svg#message" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <b class="text-sm">E-mail</b>
+                                    <span class="text-sm">
+                                        vladimirsanczuk@fullstackdev.com.ar
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Locación -->
+                            <div class="flex flex-row gap-2 items-center">
+                                <div class="flex w-9 h-9 bg-blue-600/15 text-blue-500 rounded-lg items-center justify-center">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="/recursos/assets/svg/sprite.svg#maps" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <b  class="text-sm">Ubicación</b>
+                                    <span class="text-sm">Córdoba, Argentina</span>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario contacto -->
+                    <div class="w-full">
+                        <article class="flex flex-col gap-4 items-center bg-white p-4 rounded-lg w-full">
+                            <form action="#" method="POST" class="flex flex-col gap-4 w-full">
+
+                                <div class="flex flex-col gap-4 w-full sm:flex-row lg:flex-col">
+                                    <div class="flex flex-col gap-2 sm:w-1/2 lg:w-full">
+                                        <label for="inputNombre">Nombre</label>
+                                        <input type="text" id="inputNombre" placeholder="Nombre" class="border border-neutral-600 rounded-md p-2">
+                                    </div>
+
+                                    <div class="flex flex-col gap-2 sm:w-1/2 lg:w-full">
+                                        <label for="inputApellido">Apellido</label>
+                                        <input type="text" id="inputApellido" placeholder="Apellido" class="border border-neutral-600 rounded-md p-2">
+                                    </div>
+                                </div>
+
+
+                                <div class="flex flex-col gap-2">
+                                    <label for="inputCorreo">E-mail</label>
+                                    <input type="text" id="inputCorreo" placeholder="maxi@ejemplo.com" class="border border-neutral-600 rounded-md p-2">
+                                </div>
+                                
+
+                                <div class="flex flex-col gap-2">
+                                    <label for="inputAsunto">Asunto</label>
+                                    <input type="text" id="inputAsunto" placeholder="Asunto" class="border border-neutral-600 rounded-md p-2">
+                                </div>
+
+                                <div class="flex flex-col gap-2">
+                                    <label for="areaMensaje">Mensaje</label>
+                                    <textarea name="areaMensaje" id="areaMensaje" placeholder="Mensaje" class="border border-neutral-600 resize-none rounded-md p-2"></textarea>
+                                </div>        
+                            </form>
+
+                            <button type="submit" class="bg-blue-500 rounded-full px-4 py-1 cursor-pointer font-semibold text-white hover:bg-blue-600">
+                                Enviar Mensaje
+                            </button>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/recursos/js/index.js"></script>
+    
+</body>
+</html>

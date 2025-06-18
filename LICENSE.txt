@@ -1,0 +1,29 @@
+LICENCIA / LICENSE
+
+Esta obra está licenciada bajo una Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional.
+
+Puedes consultar una copia de esta licencia en:
+https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es
+
+Se permite copiar y redistribuir el material en cualquier medio o formato bajo las siguientes condiciones:
+
+- Atribución — Debes dar el crédito adecuado, proporcionar un enlace a la licencia e indicar si se han realizado cambios.
+- NoComercial — No puedes utilizar el material con fines comerciales.
+- SinDerivadas — Si remezclas, transformas o creas a partir del material, no puedes distribuir el material modificado.
+
+No se aplican restricciones adicionales — No puedes aplicar términos legales o medidas tecnológicas que restrinjan legalmente a otros de hacer cualquier cosa que la licencia permita.
+
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+You can view a copy of the license at:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- NonCommercial — You may not use the material for commercial purposes.
+- NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
