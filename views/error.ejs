@@ -1,0 +1,10 @@
+<% if(code === 404) { %>
+  <h1>404 - Página no encontrada</h1>
+  <p>Es posible que el enlace esté roto o que la página haya sido eliminada.</p>
+<% } else if(code === 500) { %>
+  <h1>500 - Error del servidor</h1>
+  <p>Estamos experimentando problemas. Intenta más tarde.</p>
+<% } else { %>
+  <h1>Error <%= code %></h1>
+  <p><%= message %></p>
+<% } %>

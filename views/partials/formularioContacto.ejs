@@ -1,37 +1,58 @@
 <article class="flex flex-col gap-4 items-center bg-white p-4 rounded-lg w-full">
-    <form action="#" method="POST" class="flex flex-col gap-4 w-full">
 
-        <div class="flex flex-col sm:flex-row gap-4">
-            <div class="flex flex-col gap-2">
+    <form id="formContacto" class="flex flex-col gap-4 w-full">
+
+        <div class="flex flex-col gap-4 sm:flex-row sm:justify-between">
+            <div class="flex flex-col gap-2 sm:w-1/2">
                 <label for="inputNombre">Nombre</label>
-                <input type="text" id="inputNombre" placeholder="Nombre" class="border border-neutral-600 rounded-md p-2">
+                <input type="text" name="nombre" id="inputNombre" placeholder="Nombre" class="border border-neutral-600 rounded-md p-2" required>
             </div>
 
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 sm:w-1/2">
                 <label for="inputApellido">Apellido</label>
-                <input type="text" id="inputApellido" placeholder="Apellido" class="border border-neutral-600 rounded-md p-2">
+                <input type="text" name="apellido" id="inputApellido" placeholder="Apellido" class="border border-neutral-600 rounded-md p-2" required>
             </div>
         </div>
 
 
         <div class="flex flex-col gap-2">
             <label for="inputCorreo">E-mail</label>
-            <input type="text" id="inputCorreo" placeholder="maxi@ejemplo.com" class="border border-neutral-600 rounded-md p-2">
+            <input
+                type="email"
+                name="email"
+                id="inputCorreo"
+                placeholder="maxi@ejemplo.com"
+                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                class="border border-neutral-600 rounded-md p-2"
+                required
+            >
         </div>
         
 
         <div class="flex flex-col gap-2">
             <label for="inputAsunto">Asunto</label>
-            <input type="text" id="inputAsunto" placeholder="Asunto" class="border border-neutral-600 rounded-md p-2">
+            <input type="text" name="asunto" id="inputAsunto" placeholder="Asunto" class="border border-neutral-600 rounded-md p-2" required>
         </div>
 
         <div class="flex flex-col gap-2">
             <label for="areaMensaje">Mensaje</label>
-            <textarea name="areaMensaje" id="areaMensaje" placeholder="Mensaje" class="border border-neutral-600 resize-none rounded-md p-2"></textarea>
+            <textarea
+                name="mensaje"
+                id="areaMensaje"
+                placeholder="Mensaje"
+                class="border border-neutral-600 resize-none rounded-md p-2"
+                maxlength="255"
+                required
+            ></textarea>
+            <div id="contadorMensaje" class="text-right text-sm text-gray-500">0/255</div>
         </div>        
     </form>
 
-    <button type="submit" class="bg-blue-500 rounded-full px-4 py-1 cursor-pointer font-semibold text-white hover:bg-blue-600">
+    <button
+        type="submit"
+        form="formContacto"
+        class="bg-blue-500 rounded-full px-4 py-1 cursor-pointer font-semibold text-white hover:bg-blue-600"
+    >
         Enviar Mensaje
     </button>
 

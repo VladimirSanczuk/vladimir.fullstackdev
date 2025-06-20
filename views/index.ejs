@@ -459,49 +459,18 @@
 
                     <!-- Formulario contacto -->
                     <div class="w-full">
-                        <article class="flex flex-col gap-4 items-center bg-white p-4 rounded-lg w-full">
-                            <form action="#" method="POST" class="flex flex-col gap-4 w-full">
-
-                                <div class="flex flex-col gap-4 w-full sm:flex-row lg:flex-col">
-                                    <div class="flex flex-col gap-2 sm:w-1/2 lg:w-full">
-                                        <label for="inputNombre">Nombre</label>
-                                        <input type="text" id="inputNombre" placeholder="Nombre" class="border border-neutral-600 rounded-md p-2">
-                                    </div>
-
-                                    <div class="flex flex-col gap-2 sm:w-1/2 lg:w-full">
-                                        <label for="inputApellido">Apellido</label>
-                                        <input type="text" id="inputApellido" placeholder="Apellido" class="border border-neutral-600 rounded-md p-2">
-                                    </div>
-                                </div>
-
-
-                                <div class="flex flex-col gap-2">
-                                    <label for="inputCorreo">E-mail</label>
-                                    <input type="text" id="inputCorreo" placeholder="maxi@ejemplo.com" class="border border-neutral-600 rounded-md p-2">
-                                </div>
-                                
-
-                                <div class="flex flex-col gap-2">
-                                    <label for="inputAsunto">Asunto</label>
-                                    <input type="text" id="inputAsunto" placeholder="Asunto" class="border border-neutral-600 rounded-md p-2">
-                                </div>
-
-                                <div class="flex flex-col gap-2">
-                                    <label for="areaMensaje">Mensaje</label>
-                                    <textarea name="areaMensaje" id="areaMensaje" placeholder="Mensaje" class="border border-neutral-600 resize-none rounded-md p-2"></textarea>
-                                </div>        
-                            </form>
-
-                            <button type="submit" class="bg-blue-500 rounded-full px-4 py-1 cursor-pointer font-semibold text-white hover:bg-blue-600">
-                                Enviar Mensaje
-                            </button>
-
-                        </article>
+                        <%- include('partials/formularioContacto') %>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
+
+        <!-- contenedor de toasts -->
+        <div id="toast-container" class="fixed bottom-4 right-4 flex flex-col items-end space-y-2 z-50 pointer-events-none"></div>
+
 
     </main>
 
@@ -509,6 +478,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/recursos/js/index.js"></script>
+    <script src="/recursos/js/formularioContacto.js"></script>
+    <script src="/recursos/js/toasts.js"></script>
     
 </body>
 </html>
