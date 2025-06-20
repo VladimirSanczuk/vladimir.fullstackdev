@@ -17,6 +17,11 @@ app.use(express.json()); // Parseo de JSON
 // Configurar dotenv
 dotenv.config({ path: path.resolve(__dirname, 'env/.env') });
 
+console.log('⮕ ENV vars:', {
+  PORT: process.env.PORT,
+  RESEND_API_KEY: process.env.RESEND_API_KEY?.slice(0, 5) + '…',
+});
+
 // Configuracion para poder acceder a la carpeta public desde cualquier lugar usando 'recursos'
 app.use('/recursos', express.static('public'));
 app.use('/recursos', express.static(__dirname + 'public'));
