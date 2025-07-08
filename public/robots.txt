@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow:/recursos/documents/
 
 Sitemap: https://www.fullstackdev.com.ar/recursos/sitemap.xml
