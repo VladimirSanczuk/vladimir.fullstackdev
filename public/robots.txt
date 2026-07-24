@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:/recursos/documents/
+Disallow: /recursos/documents/
 
-Sitemap: https://www.vladimirsanczuk.com.ar/recursos/sitemap.xml
+Sitemap: https://www.vladimirsanczuk.com.ar/sitemap.xml

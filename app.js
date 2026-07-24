@@ -44,6 +44,15 @@ app.get('/', (req, res) => {
 });
 
 
+app.get('/robots.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'robots.txt'));
+});
+
+
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
+});
+
 
 
 
@@ -99,8 +108,6 @@ app.use((err, req, res, next) => {
         message: messages[status] || 'Error del servidor.'
     });
 });
-
-
 
 
 
